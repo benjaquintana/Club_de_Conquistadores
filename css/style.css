@@ -56,6 +56,9 @@ ul {
     background-position: center center;
     background-attachment: fixed;
 }
+.seccion {
+    padding-bottom: 2rem;
+}
 
 /* Botones */
 .boton {
@@ -123,6 +126,11 @@ ul {
     background-size: cover;
     height: 100vh;
     position: relative;
+}
+@media (min-width: 768px) {
+    .header {
+        height: 50vh;
+    }
 }
 .header::after {
     content: '';
@@ -282,6 +290,18 @@ ul {
     }
 }
 
+/* Parallax Index*/
+div.parallax_index {
+    position: relative;
+    height: auto;
+}
+div.parallax_index::before {
+    background-image: url(../img/bg-padres.jpg);
+    content: '';
+    filter: brightness(.3);
+    -webkit-filter: brightness(.3);
+}
+
 /* Aplicaciones */
 .apps {
     display: grid;
@@ -335,6 +355,11 @@ ul {
 }
 
 /* Páginas Internas */
+
+/* 404 */
+.header_404 {
+    height: 80vh;    
+}
 
 /* Nosotros */
 .contenedor_directiva {
@@ -506,6 +531,7 @@ div.mapa_ccc {
         font-weight: 600;
     } 
 }
+
 /* Padres */
 section.contenedor_autorizaciones {
     width: 100%;
