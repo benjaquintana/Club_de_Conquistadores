@@ -477,12 +477,12 @@ div.mapa_ccc {
 /* Clases Progresivas */
 
 
-/* Galería */
-.navegador_galeria {
+/* Manual de Especialidades */
+.navegador_manual {
     background-color: var(--secundario);
 }
 @media (min-width: 768px) {
-    .navegador_galeria {
+    .navegador_manual {
         border-top: 1px solid #f2F2f2;
         position: sticky;
         position: -webkit-sticky;
@@ -499,10 +499,10 @@ div.mapa_ccc {
 }
 
 /* Navegación Responsive */
-.navegador_galeria {
+.navegador_manual {
     overflow: hidden;
 }
-.mobile_menu_galeria {
+.mobile_menu_manual {
     color: var(--secundarioOscuro);
     background-color: #F7F7F7;
     font-size: 2.5rem;
@@ -511,20 +511,20 @@ div.mapa_ccc {
     margin: 0rem;
     border: 3px solid rgba(0, 0, 0, 0)
 }
-.mobile_menu_galeria:hover {
+.mobile_menu_manual:hover {
     background-color: var(--secundarioOscuro);
     border: 3px solid var(--primario);
     border-radius: 5%;
     color: var(--primario)
 }
-#nav_galeria:target {
+#nav_manual:target {
     max-height: 80rem;
 }
 .years {
     max-height: 0;
     transition: 0.8s;
 }
-.cerrar_galeria {
+.cerrar_manual {
     color: #ffffff;
     text-decoration: none;
     font-size: 2rem;
@@ -533,7 +533,7 @@ div.mapa_ccc {
     margin: 0;
     border: 3px solid rgba(0, 0, 0, 0)
 }
-.cerrar_galeria:hover {
+.cerrar_manual:hover {
     background-color: var(--secundarioOscuro);
     border: 3px solid var(--primario);
     border-radius: 5%;
@@ -543,17 +543,16 @@ div.mapa_ccc {
     .years {
         max-height: unset;
         display: flex;
-        flex-direction: row-reverse;
         justify-content: center;
     }
-    .mobile_menu_galeria,
-    .cerrar_galeria {
+    .mobile_menu_manual,
+    .cerrar_manual {
         display: none!important;
     }
 }
 
 /* Grid */
-.galeria {
+.manual {
     margin-bottom: 1rem;
 }
 .grid {
