@@ -489,11 +489,11 @@ div.mapa_ccc {
         top: 0;
     }
 }
-.years {
+.area {
     width: 100%;
 }
 @media (min-width: 768px) {
-    .years {
+    .area {
         text-align: center;
     }
 }
@@ -520,7 +520,7 @@ div.mapa_ccc {
 #nav_manual:target {
     max-height: 80rem;
 }
-.years {
+.area {
     max-height: 0;
     transition: 0.8s;
 }
@@ -540,9 +540,9 @@ div.mapa_ccc {
     color: var(--primario)
 }
 @media (min-width: 768px) {
-    .years {
+    .area {
         max-height: unset;
-        display: flex;
+        display: ;
         justify-content: center;
     }
     .mobile_menu_manual,
