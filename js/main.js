@@ -1,4 +1,4 @@
-$(function() {
+(function() {
 
    //Menu Responsive
     $('.menu_movil').on('click', function() {
