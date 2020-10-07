@@ -5,38 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Mundo Conquistador</title>
+
     <link rel="shortcut icon" href="favicon.png" type="image/png">
+
     <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/all.min.css">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <header class="header header_404">  
-        <div class="navegador">
-            <a href="#nav" class="mobile_menu"><i class="fas fa-bars"></i></a>
-            <nav id="nav" class="contenedor navegacion_principal">
-                <a href="index.html" class="boton boton_secundario">Inicio</a>
-                <a href="nosotros.html" class="boton boton_secundario">Nosotros</a>
-                <a href="404.html" class="boton boton_secundario">Clases Progresivas</a>
-                <a href="manual.html" class="boton boton_secundario">Especialidades</a>
-                <a href="404.html" class="boton boton_secundario">Directivos</a>
-                <a href="404.html" class="boton boton_secundario">Descargas</a>
-                <a href="#" class="cerrar"><i class="fas fa-times"></i></a>        
-            </nav>
-        </div>                        
+ <!-- Barra de Navegacion -->
+    <div class="navegador">
+    
+        <div class="menu_movil">
+            <p><i class="fas fa-bars"></i></p>
+        </div>
+
+        <nav class="navegacion_principal">
+            <ul class="contenido_navegacion">
+                <li>
+                    <a href="index.html" class="boton boton_secundario activo">Inicio</a>
+                </li>
+                <li>
+                    <a href="404.html" class="boton boton_secundario">Nosotros</a>
+                </li>
+                <li class="boton boton_secundario">
+                    <a href="404.html" class="dropbtn">Clases Progresivas</a>
+                    <div class="dropdown_content">
+                        <a href="404.html" class="boton_secundario">Amigo</a>
+                        <a href="404.html" class="boton_secundario">Compañero</a>
+                        <a href="404.html" class="boton_secundario">Explorado</a>
+                        <a href="404.html" class="boton_secundario">Pionero</a>
+                        <a href="404.html" class="boton_secundario">Excursionista</a>
+                        <a href="404.html" class="boton_secundario">Guía</a>
+                        <p>-----------------------------</p>
+                        <a href="404.html" class="boton_secundario">Agrupadas</a>
+                        <a href="404.html" class="boton_secundario">Guía Mayor</a>
+                        <a href="404.html" class="boton_secundario">Guía Mayor Master</a>
+                        <a href="404.html" class="boton_secundario">Guía Mayor Master Avanzado</a>    
+                    </div>
+                </li>
+
+                <li class="boton boton_secundario">
+                    <a href="manual.html" class="dropbtn">Especialidades</a>
+                    <div class="dropdown_content">
+                        <a href="404.html" class="boton_secundario">Adra</a>
+                        <a href="404.html" class="boton_secundario">Arte y Habilidades Manuales</a>
+                        <a href="404.html" class="boton_secundario">Actividades Agrícolas</a>
+                        <a href="404.html" class="boton_secundario">Actividades Misioneras y Comunitarias</a>
+                        <a href="404.html" class="boton_secundario">Actividades Profecionales</a>
+                        <a href="404.html" class="boton_secundario">Actividades Recreativas</a>
+                        <a href="404.html" class="boton_secundario">Ciencia y Salud</a>
+                        <a href="404.html" class="boton_secundario">Estudio de la Naturaleza</a>
+                        <a href="404.html" class="boton_secundario">Habilidades Domésticas</a>
+                        <a href="404.html" class="boton_secundario">Maestrías</a>    
+                    </div>
+                </li>
+                <li><a href="404.html" class="boton boton_secundario">Directivos</a></li>
+                <li><a href="404.html" class="boton boton_secundario">Descargas</a></li>
+            </ul>        
+        </nav>
+    </div>
+    <header class="header header_404">                                   
         <div class="hero">
             <div class="contenedor">
                 <picture class="logo">
                     <img src="img/barra2.png" alt="logo_hero">
                 </picture>
                 <div class="contenido_hero">
-                    <p>Proximamente en funcionamiento...</p>
-                    <p class="span">Maranatha!</p>
+                    <p>Una vez conquistador...</p>
+                    <p class="span">siempre conquistador!</p>
                 </div>
             </div>
         </div>        
     </header>
+
+   
     <footer class="footer">        
         <div class="contenedor contenido_footer">
             <div class="logo_footer">
@@ -52,5 +96,8 @@
             <p>Club CCC - Todos los Derechos Reservados &copy; - 2019</p>
         </div>        
     </footer>
+
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
