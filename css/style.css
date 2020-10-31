@@ -279,6 +279,11 @@ div.menu_movil p {
 }
 
 /* Mensaje del Director */
+.mensaje_director {
+    background-color: #FFFFFF;
+    border-radius: 2rem;
+    padding-bottom: 1rem;
+}
 @media (min-width: 768px) {
     .contenido_mensaje {
         display: flex;
@@ -287,16 +292,16 @@ div.menu_movil p {
     }
     .imagen_director {
         margin-right: 2rem;
-        width: calc(33% - 1rem);
+        width: 33%;
     }
-}
-.mensaje_director {
-    background-color: #FFFFFF;
-    border-radius: 2rem;
-    padding-bottom: 1rem;
 }
 .texto_mensaje h3 {
     text-align: right;
+}
+@media (min-width: 768px) {
+    .texto_mensaje {
+        width: calc(66% - 1rem);
+    }
 }
 
 /* Parallax Index*/
