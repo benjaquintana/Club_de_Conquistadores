@@ -284,6 +284,9 @@ div.menu_movil p {
     border-radius: 2rem;
     padding-bottom: 1rem;
 }
+.imagen_director img {
+    border-radius: 5%;
+}
 @media (min-width: 768px) {
     .contenido_mensaje {
         display: flex;
