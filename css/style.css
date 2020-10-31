@@ -292,7 +292,7 @@ div.menu_movil p {
     }
     .imagen_director {
         margin-right: 2rem;
-        width: 33%;
+        width: 20%;
     }
 }
 .texto_mensaje h3 {
@@ -300,7 +300,7 @@ div.menu_movil p {
 }
 @media (min-width: 768px) {
     .texto_mensaje {
-        width: calc(66% - 1rem);
+        width: calc(80% - 1rem);
     }
 }
 
