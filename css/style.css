@@ -307,6 +307,20 @@ div.parallax_index::before {
     filter: brightness(.3);
     -webkit-filter: brightness(.3);
 }
+div.contenido_parallax {
+    position: relative;
+    padding: 12rem 0;
+    color: #FFFFFF;
+}
+div.contenido_parallax p {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 2;
+    font-style: italic;
+}
+div.contenido_parallax h3 {
+    text-align: right;
+}
 
 /* Aplicaciones */
 .apps {
@@ -370,7 +384,6 @@ div.parallax_index::before {
 /* Nosotros */
 
 /* Clases Progresivas */
-
 
 /* Manual de Especialidades */
 .manual {
