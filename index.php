@@ -15,7 +15,7 @@
                     <img src="img/director.jpg" alt="imagen_director">
                 </picture>
                 <div class="texto_mensaje">
-                    <p>Hola mi querido amigo, querida amiga que nos estás visitando. Te doy la bienvenida a esta página donde podrás encotrar todo lo que necestias para tu crecimieto y desarrollo como conquistador y conquistadora. El Club de Conquistadores es un hermoso ministerio de la Iglesia Adventista del Séptimo Día. Aquí podrás encontrar especialidades, cursos de entrenamiento, seminarios de capacitación y material para líderes y consejeros. ¡Que Dios te bendiga...Marantha!</p>
+                    <p>Hola mi querido amigo, mi querida amiga que nos estás visitando. Te doy la bienvenida a esta página donde podrás encotrar todo lo que necesitas para tu crecimieto y desarrollo como conquistador y conquistadora. El Club de Conquistadores es un hermoso ministerio de la Iglesia Adventista del Séptimo Día. Aquí podrás encontrar especialidades, cursos de entrenamiento, seminarios de capacitación y material para líderes y consejeros. ¡Que Dios te bendiga...Marantha!</p>
                     <h3>GMMA Benjamin Quintana</h3>                    
                 </div>
             </div>
