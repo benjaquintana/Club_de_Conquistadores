@@ -12,7 +12,7 @@
             <h2>Listado de Areas</h2>
             <div class="areas">
                 <picture>
-                    <a href="manual/areas/adra.php">
+                    <a href="adra.php">
                         <img src="img/areas/01_adra.jpeg" alt="Adra">
                     </a>
                 </picture>

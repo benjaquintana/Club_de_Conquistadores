@@ -1,8 +1,6 @@
 <?php 
     //Header
     include_once 'includes/templates/header.php';
-    //Hero
-    include_once 'includes/templates/hero.php';
     //Barra
     include_once 'includes/templates/barra.php';
 ?>
@@ -13,52 +11,47 @@
             <div class="areas">
                 <picture>
                     <a href="adra.html">
-                        <img src="img/01_adra.jpeg" alt="Adra">
+                        <img src="img/especialidades/ad001.png" alt="img_AD001">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view">
-                        <img src="img/02_artes.jpeg" alt="Artes">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad002.png" alt="img_AD002">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/03_agricolas.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad003.png" alt="img_AD003">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/04_misioneras.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad004.png" alt="img_AD004">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/05_profecionales.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad005.png" alt="img_AD005">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/06_recreativas.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad006.png" alt="img_AD006">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/07_salud.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad007.png" alt="img_AD007">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/08_naturaleza.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad008.png" alt="img_AD008">
                     </a>
                 </picture>
                 <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/09_domesticas.jpeg" alt="">
-                    </a>
-                </picture>
-                <picture>
-                    <a href="https://drive.google.com/file/d/1hsS2XqVLRGCAHdCje4BHyACo2frT_Mok/view?usp=sharing">
-                        <img src="img/10_maestrias.jpeg" alt="">
+                    <a href="adra.html">
+                        <img src="img/especialidades/ad009.png" alt="img_AD009 ">
                     </a>
                 </picture>
             </div>

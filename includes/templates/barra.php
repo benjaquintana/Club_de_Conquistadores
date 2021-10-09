@@ -36,7 +36,7 @@
             <li class="boton boton_secundario">
                 <a href="especialidades.php" class="dropbtn">Especialidades</a>
                 <div class="dropdown_content">
-                    <a href="manual/areas/adra.php" class="boton_secundario">Adra</a>
+                    <a href="adra.php" class="boton_secundario">Adra</a>
                     <a href="404.html" class="boton_secundario">Arte y Habilidades Manuales</a>
                     <a href="404.html" class="boton_secundario">Actividades Agrícolas</a>
                     <a href="404.html" class="boton_secundario">Actividades Misioneras y Comunitarias</a>

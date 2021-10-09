@@ -389,6 +389,7 @@ div.contenido_parallax h3 {
 .manual {
     margin-bottom: 1rem;
 }
+/* Areas */
 .areas {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -402,3 +403,4 @@ div.contenido_parallax h3 {
 picture img {
     border-radius: 0;
 }
+/* Especialidades */
