@@ -10,7 +10,7 @@
             <h2>Listado de Especialidades</h2>
             <div class="areas">
                 <picture>
-                    <a href="adra.html">
+                    <a href="ad001.php">
                         <img src="img/especialidades/ad001.png" alt="img_AD001">
                     </a>
                 </picture>
