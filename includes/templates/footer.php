@@ -4,6 +4,7 @@
                 <a href="index.html"><img src="img/barra.png" alt="logo_barra"></a>
             </div>
             <div class="redes">
+            <a target="_blank" href="admin/admin_area.php" title="Administrador"><i class="fas fa-user-tie"></i></a>
                 <a target="_blank" href="https://www.facebook.com/clubcccarg/"><i class="fab fa-facebook-square"></i></a>
                 <a target="_blank" href="https://www.youtube.com/channel/UCLNhj4X2dRFkEMrmk_nNUFA"><i class="fab fa-youtube"></i></a>
                 <a target="_blank" href="https://www.instagram.com/clubccc/?hl=es-la"><i class="fab fa-instagram"></i></a>
