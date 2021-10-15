@@ -9,7 +9,7 @@
         $id_registro = $_POST['id_registro'];
         try {
             include_once 'funciones/funciones.php';
-            $stmt = $conn->prepare("SELECT * FROM administradores WHERE usuario = ? ");
+            $stmt = $conn->prepare("SELECT * FROM admin WHERE usuario = ? ");
             $stmt->bind_param("s", $usuario);
             $stmt->execute();
             $stmt->bind_result($id_admin, $usuario_admin, $nombre_admin, $apellido_admin, $password_admin, $editado, $nivel);
