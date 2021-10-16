@@ -1,56 +1,67 @@
-<body class="hold-transition sidebar-mini layout-fixed layout-navbar-fixed principal">
-    <!-- Site wrapper -->
-    <div class="wrapper">
-        <!-- Navbar -->
-        <nav class="main-header navbar navbar-expand navbar-white navbar-light navegacion clearfix">
-            
-            <!-- Left navbar links -->
-            <ul class="navbar-nav col-md-4">
-                <li class="nav-item menu_barra">
-                    <a class="nav-link" id="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
-                </li>
-                <li class="nav-item">
-                    <a href="../index.php" class="brand-link">
-                        <img src="../favicon.png" alt="Unidos en Fe" class="brand-image img-circle elevation-3" style="opacity: .8">
-                        <span class="d-none d-sm-inline-block brand-text font-weight-light texto_logo">Fe y Esperanza</span>
-                    </a>
-                </li>
-            </ul>
+<body class="hold-transition sidebar-mini">
+<!-- Site wrapper -->
+<div class="wrapper">
+  <!-- Navbar -->
+  <nav class="main-header navbar navbar-expand navbar-white navbar-light">
+    <!-- Left navbar links -->
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" data-widget="pushmenu" href="#" role="button"><i class="fas fa-bars"></i></a>
+      </li>
+    </ul>
 
-            <!-- Center navbar links -->
-            <ul class="navbar-nav col-md-4 navegacion_center">
-                <li class="nav-item d-sm-inline-block">
-                    <a href="admin_area.php" class="nav-link icono" title="Inicio"><i class="fas fa-home"></i></a>
-                </li>
+    <!-- Right navbar links -->
+    <ul class="navbar-nav ml-auto">
 
-                <!-- Contactos -->
-                <li class="nav-item d-none d-sm-inline-block">
-                    <a href="lista_miembros.php" class="nav-link icono" title="Amigos"><i class="fas fa-user-circle"></i></a>
-                </li>
-            </ul>
+      <!-- Language Dropdown Menu -->
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#">
+          <i class="flag-icon flag-icon-es"></i>
+        </a>
+        <div class="dropdown-menu dropdown-menu-right p-0">
+          <a href="#" class="dropdown-item active">
+            <i class="flag-icon flag-icon-us mr-2"></i> English
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="flag-icon flag-icon-de mr-2"></i> German
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="flag-icon flag-icon-fr mr-2"></i> French
+          </a>
+          <a href="#" class="dropdown-item">
+            <i class="flag-icon flag-icon-es mr-2"></i> Spanish
+          </a>
+        </div>
+      </li>
 
-            <!-- Right navbar links -->
-            <ul class="col-md-4 mb-0">
-                <div class="navbar-nav navegacion_right">
-                    <!-- User Information -->
-                    <li class="nav-item dropdown user-menu">
-                        <a href="#" class="nav-link dropdown-toggle perfil_nav" data-toggle="dropdown">
-                            <img src="../favicon.png" class="user-image img-circle elevation-2" alt="User Image">
-                            <span class="d-none d-md-inline"><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></span>
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
-                            <!-- User image -->
-                            <li class="user-header bg-primary">
-                                <img src="../favicon.png" class="img-circle elevation-2" alt="User Image">
-                                <p><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></p>
-                            </li>
-                            <!-- Menu Footer-->
-                            <li class="user-footer">
-                                <a href="login.php?cerrar_sesion=true" class="btn btn-default btn-flat float-right">Cerrar Sesión</a>
-                            </li>
-                        </ul>
-                    </li>
-                </div>
-            </ul>
-        </nav>
-        <!-- /.navbar -->
+      <!-- User Legacy Menu -->
+      <li class="nav-item dropdown user-menu">
+        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">
+          <img src="img/user2-160x160.jpg" class="user-image img-circle elevation-2" alt="User Image">
+          <span class="d-none d-md-inline"><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido']; ?></span>
+        </a>
+        <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
+          <!-- User image -->
+          <li class="user-header bg-primary">
+            <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
+
+            <p>
+              <?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido']; ?>
+              <small></small>
+            </p>
+          </li>
+          <!-- Menu Footer-->
+          <li class="user-footer">
+            <a href="#" class="btn btn-default btn-flat">Perfil</a>
+            <a href="login.php?cerrar_sesion=true" class="btn btn-default btn-flat float-right">Cerrar Sesión</a>
+          </li>
+        </ul>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" data-widget="fullscreen" href="#" role="button">
+          <i class="fas fa-expand-arrows-alt"></i>
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <!-- /.navbar -->

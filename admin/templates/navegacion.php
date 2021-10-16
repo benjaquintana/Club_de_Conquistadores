@@ -1,220 +1,213 @@
-<!-- Main Sidebar Container -->
-        <aside class="main-sidebar sidebar-light-warning elevation-4 main_sidebar_left">
-           
-            <!-- Sidebar -->
-            <div class="sidebar sidebar_left">
-                <!-- Sidebar user (optional) -->
-                <div class="user-panel mt-3 pb-3 mb-3 d-flex">
-                    <div class="image">
-                        <img src="../favicon.png" class="img-circle elevation-2" alt="User Image">
-                    </div>
-                    <div class="info">
-                        <p class="d-block"><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></p>
-                    </div>
-                </div>
+ <!-- Main Sidebar Container -->
+  <aside class="main-sidebar sidebar-dark-primary elevation-4">
+    <!-- Brand Logo -->
+    <a href="../index.php" class="brand-link">
+      <img src="img/AdminLTELogo.png" alt="AdminLTE Logo" class="brand-image img-circle elevation-3" style="opacity: .8">
+      <span class="brand-text font-weight-light"><b>GDL</b>WebCamp</span>
+    </a>
 
-                <!-- Sidebar Menu -->
-                <nav class="mt-2">
-                    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
-                        <!-- Add icons to the links using the .nav-icon class with font-awesome or any other icon font library -->
-                        <li class="nav-item">
-                            <a href="admin_area.php" class="nav-link">
-                                <i class="nav-icon fas fa-tachometer-alt"></i>
-                                <p>Dashboard</p>
-                            </a>
-                        </li>
-
-                        <!-- Equipo -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-users-cog"></i>
-                                <p>
-                                    Equipo
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_equipo.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_equipo.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Páginas -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-flag"></i>
-                                <p>
-                                    Páginas 
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_paginas.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_pagina.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Radio en Vivo -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-broadcast-tower"></i>
-                                <p>
-                                    Radios en Vivo
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_radios.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_radio.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Canales -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tv"></i>
-                                <p>
-                                    Canales
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_canales.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_canal.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Creencias -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-book-open"></i>
-                                <p>
-                                    Creencias
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_creencias.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_creencias.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Miembros -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
-                                <p>
-                                    Miembros
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_miembros.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_miembro.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Administradores -->
-                        <?php if($_SESSION['nivel'] == 1): ?>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-user-tie"></i>
-                                <p>
-                                    Administradores
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_admin.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <li class="nav-item">
-                                    <a href="crear_admin.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                            </ul>
-                        </li>
-                        <?php endif; ?>
-                    </ul>
-                </nav>
-                <!-- /.sidebar-menu -->
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <!-- Sidebar user (optional) -->
+        <div class="user-panel mt-3 pb-3 mb-3 d-flex">
+            <div class="image">
+                <img src="img/user2-160x160.jpg" class="img-circle elevation-2" alt="User Image">
             </div>
-            <!-- /.sidebar -->
-        </aside>
+            <div class="info">
+                <a href="#" class="d-block"><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido']; ?></a>
+            </div>
+        </div>
+
+      <!-- SidebarSearch Form -->
+      <div class="form-inline">
+        <div class="input-group" data-widget="sidebar-search">
+          <input class="form-control form-control-sidebar" type="search" placeholder="Buscar" aria-label="Buscar">
+          <div class="input-group-append">
+            <button class="btn btn-sidebar">
+              <i class="fas fa-search fa-fw"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Sidebar Menu -->
+      <nav class="mt-2">
+        <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
+          <li class="nav-header">MENÚ PRINCIPAL</li>
+
+          <!-- Dashboard -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-tachometer-alt"></i>
+              <p>
+                Dashboard
+                <i class="right fas fa-angle-left"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="dashboard.php" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Dashboard</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Eventos -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-calendar"></i>
+              <p>
+                Eventos
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="lista_eventos.php" class="nav-link">
+                  <i class="fas fa-list-alt nav-icon"></i>
+                  <p>Ver Todos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="crear_eventos.php" class="nav-link">
+                  <i class="fas fa-calendar-plus nav-icon"></i>
+                  <p>Agregar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Categoría Eventos -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-book"></i>
+              <p>
+                Categoría Eventos
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="lista_categorias.php" class="nav-link">
+                  <i class="fas fa-list-alt nav-icon"></i>
+                  <p>Ver Todos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="crear_categorias.php" class="nav-link">
+                  <i class="fas fa-calendar-plus nav-icon"></i>
+                  <p>Agregar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Invitados -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-circle"></i>
+              <p>
+                Invitados
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="lista_invitados.php" class="nav-link">
+                  <i class="fas fa-list-alt nav-icon"></i>
+                  <p>Ver Todos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="crear_invitados.php" class="nav-link">
+                  <i class="fas fa-calendar-plus nav-icon"></i>
+                  <p>Agregar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Registrados -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-address-card"></i>
+              <p>
+                Registrados
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="lista_registrados.php" class="nav-link">
+                  <i class="fas fa-list-alt nav-icon"></i>
+                  <p>Ver Todos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="crear_registro.php" class="nav-link">
+                  <i class="fas fa-user-plus nav-icon"></i>
+                  <p>Agregar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+
+          <!-- Administradores -->
+          <?php if($_SESSION['nivel'] == 1): ?>
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-user-tie"></i>
+              <p>
+                Administradores
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="lista_admin.php" class="nav-link">
+                  <i class="fas fa-list-alt nav-icon"></i>
+                  <p>Ver Todos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="crear_admin.php" class="nav-link">
+                  <i class="fas fa-calendar-plus nav-icon"></i>
+                  <p>Agregar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <?php endif; ?>
+
+          <!-- Testimoniales -->
+          <li class="nav-item">
+            <a href="#" class="nav-link">
+              <i class="nav-icon fas fa-comments"></i>
+              <p>
+                Testimoniales
+                <i class="fas fa-angle-left right"></i>
+              </p>
+            </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-list-alt nav-icon"></i>
+                  <p>Ver Todos</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="fas fa-calendar-plus nav-icon"></i>
+                  <p>Agregar</p>
+                </a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <!-- /.sidebar-menu -->
+    </div>
+    <!-- /.sidebar -->
+  </aside>

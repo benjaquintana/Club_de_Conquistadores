@@ -58,7 +58,7 @@
             if($stmt->affected_rows) {
                 $respuesta = array(
                     'respuesta' => 'exito',
-                    'id_actualizado' => $id_registro
+                    'id_actualizado' => $stmt->insert_id
                 );
             } else {
               $respuesta = array(

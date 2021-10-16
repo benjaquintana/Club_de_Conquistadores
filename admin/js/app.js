@@ -92,7 +92,7 @@ $(function() {
 $(function () {
 
     $.getJSON('servicio_registrados.php', function(data) {
-        //console.log(data)
+        console.log(data)
         var fecha_registro=[];
         var cantidad_registro=[];
 
@@ -100,8 +100,8 @@ $(function () {
               fecha_registro[i]=data[i].fecha;
               cantidad_registro[i]=data[i].cantidad;
         }
-        //console.log(fecha_registro);
-        //console.log(cantidad_registro);
+        console.log(fecha_registro);
+        console.log(cantidad_registro);
 
         // Get context with jQuery - using jQuery's .get() method.
         var lineChartCanvas = $('#lineChart').get(0).getContext('2d')

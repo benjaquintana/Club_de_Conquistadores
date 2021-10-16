@@ -11,11 +11,11 @@
 ?>
 
 <body class="hold-transition login-page">
-    <div class="login-box w30">
+    <div class="login-box">
         <!-- /.login-logo -->
         <div class="card card-outline card-primary">
             <div class="card-header text-center">
-                <a href="../index.php" class="h1">Mundo Conquistador</a>
+                <a href="../index.php" class="h1"><b>GDL</b>WebCamp</a>
             </div>
             <div class="card-body">
                 <p class="login-box-msg">Inicia Sesión Aquí</p>
@@ -25,7 +25,7 @@
                       <input type="text" class="form-control" name="usuario" placeholder="Usuario">
                       <div class="input-group-append">
                           <div class="input-group-text">
-                              <span class="fas fa-user-tie"></span>
+                              <span class="fas fa-user"></span>
                           </div>
                       </div>
                   </div>

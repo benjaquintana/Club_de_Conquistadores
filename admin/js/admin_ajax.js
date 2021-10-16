@@ -2,7 +2,6 @@ $(document).ready(function() {
     //Guardar Registro
     $('#guardar_registro').on('submit', function(e) {
         e.preventDefault();
-        var tipo = $(this).attr('data-tipo');
         var datos = $(this).serializeArray();
         $.ajax({
             type: $(this).attr('method'),
@@ -10,7 +9,7 @@ $(document).ready(function() {
             url: $(this).attr('action'),
             dataType: 'json',
             success: function(data) {
-                console.log(data);
+              console.log(data);
                 var resultado = data;
                 if(resultado.respuesta == "exito") {
                     Swal.fire(
@@ -18,9 +17,6 @@ $(document).ready(function() {
                         'El adminstrador se guardo correctamente',
                         'success'
                     )
-                    setTimeout(function(){
-                        window.location.href = 'lista_'+tipo+'.php';
-                    }, 1000);
                 } else {
                     Swal.fire({
                         icon: 'error',
@@ -35,7 +31,7 @@ $(document).ready(function() {
     //Guardar Registro con Archivo
     $('#guardar_registro_archivo').on('submit', function(e) {
         e.preventDefault();
-        var tipo = $(this).attr('data-tipo');
+
         var datos = new FormData(this);
 
         $.ajax({
@@ -48,17 +44,14 @@ $(document).ready(function() {
             async: true,
             cache: false,
             success: function(data) {
-                console.log(data);
+              console.log(data);
                 var resultado = data;
                 if(resultado.respuesta == "exito") {
                     Swal.fire(
-                        '¡Correcto!',
-                        'El registro se guardó correctamente',
+                        'Correcto',
+                        'El adminstrador se guardo correctamente',
                         'success'
                     )
-                    setTimeout(function(){
-                        window.location.href = 'lista_'+tipo+'.php';
-                    }, 1000);
                 } else {
                     Swal.fire({
                         icon: 'error',
@@ -89,8 +82,8 @@ $(document).ready(function() {
                 $.ajax({
                     type: 'post',
                     data: {
-                        id: id,
-                        registro: 'eliminar'
+                      id: id,
+                      registro: 'eliminar'
                     },
                     url: 'modelo_'+tipo+'.php',
                     success:function(data) {
