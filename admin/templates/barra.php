@@ -36,13 +36,13 @@
                     <li class="nav-item dropdown user-menu">
                         <a href="#" class="nav-link dropdown-toggle perfil_nav" data-toggle="dropdown">
                             <img src="../favicon.png" class="user-image img-circle elevation-2" alt="User Image">
-                            <span class="d-none d-md-inline"><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></span>
+                            <span class="d-none d-md-inline"><?php //echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-lg dropdown-menu-right">
                             <!-- User image -->
                             <li class="user-header bg-primary">
                                 <img src="../favicon.png" class="img-circle elevation-2" alt="User Image">
-                                <p><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></p>
+                                <p><?php //echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></p>
                             </li>
                             <!-- Menu Footer-->
                             <li class="user-footer">

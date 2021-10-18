@@ -9,7 +9,7 @@
                         <img src="../favicon.png" class="img-circle elevation-2" alt="User Image">
                     </div>
                     <div class="info">
-                        <p class="d-block"><?php echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></p>
+                        <p class="d-block"><?php //echo $_SESSION['nombre'] . " " . $_SESSION['apellido'] ?></p>
                     </div>
                 </div>
 
@@ -24,170 +24,8 @@
                             </a>
                         </li>
 
-                        <!-- Equipo -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-users-cog"></i>
-                                <p>
-                                    Equipo
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_equipo.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_equipo.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Páginas -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-flag"></i>
-                                <p>
-                                    Páginas 
-                                    <i class="right fas fa-angle-left"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_paginas.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_pagina.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Radio en Vivo -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link active">
-                                <i class="nav-icon fas fa-broadcast-tower"></i>
-                                <p>
-                                    Radios en Vivo
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_radios.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_radio.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Canales -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-tv"></i>
-                                <p>
-                                    Canales
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_canales.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_canal.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Creencias -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-book-open"></i>
-                                <p>
-                                    Creencias
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_creencias.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_creencias.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
-                        <!-- Miembros -->
-                        <li class="nav-item">
-                            <a href="#" class="nav-link">
-                                <i class="nav-icon fas fa-users"></i>
-                                <p>
-                                    Miembros
-                                    <i class="fas fa-angle-left right"></i>
-                                </p>
-                            </a>
-                            <ul class="nav nav-treeview">
-                                <li class="nav-item">
-                                    <a href="lista_miembros.php" class="nav-link">
-                                        <i class="fas fa-list-alt nav-icon"></i>
-                                        <p>Ver Todos</p>
-                                    </a>
-                                </li>
-                                <?php if($_SESSION['nivel'] <= 2): ?>
-                                <li class="nav-item">
-                                    <a href="crear_miembro.php" class="nav-link">
-                                        <i class="nav-icon fas fa-plus-circle"></i>
-                                        <p>Agregar</p>
-                                    </a>
-                                </li>
-                                <?php endif; ?>
-                            </ul>
-                        </li>
-
                         <!-- Administradores -->
-                        <?php if($_SESSION['nivel'] == 1): ?>
+                        <?php //if($_SESSION['nivel'] == 1): ?>
                         <li class="nav-item">
                             <a href="#" class="nav-link">
                                 <i class="nav-icon fas fa-user-tie"></i>
@@ -211,7 +49,7 @@
                                 </li>
                             </ul>
                         </li>
-                        <?php endif; ?>
+                        <?php //endif; ?>
                     </ul>
                 </nav>
                 <!-- /.sidebar-menu -->
